@@ -335,4 +335,5 @@ export type JsonWriterOptions = {
 
 export type FormattingOptions = {
 	indent?: string,
+	newline?: string,
 }
