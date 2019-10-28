@@ -266,6 +266,15 @@ export class JsonStreamWriter implements JsonWriter {
 		}
 		
 		// TODO: Implement replacer invocation
+		// if(replacer != null) {
+		// 	if(typeof replacer === "array") {
+		//		
+		// 	}
+		// 	else if(typeof replacer === "function") {
+		//		
+		// 	}
+		// }
+		
 		let raw = this._stringify(value);
 		this._emitMember(name, raw);
 		
