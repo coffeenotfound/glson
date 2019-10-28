@@ -315,9 +315,9 @@ export class JsonStreamWriter implements JsonWriter {
 	//	
 	// }
 	
-	public flush(): Promise<void> {
-		
-	}
+	// public flush(): Promise<void> {
+	//	
+	// }
 }
 
 export enum SyntaxState {
