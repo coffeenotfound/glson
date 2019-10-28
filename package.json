@@ -1,0 +1,34 @@
+{
+	"name": "glson",
+	"version": "0.1.0",
+	"description": "A high-performance JSON stream writing library.",
+	"main": "build/main.js",
+	"types": "build/main.d.ts",
+	"scripts": {
+		"build": "tsc && node fuse.js",
+		"test": "mocha -r ts-node/register tests/**/*.ts",
+		"benchmark": "node benchmarks/*.js"
+	},
+	"keywords": [
+		"wip",
+		"json",
+		"stream"
+	],
+	"author": "Jan Katzer <code.katzer@gmail.com>",
+	"devDependencies": {
+		"@types/chai": "^4.2.0",
+		"@types/mocha": "^5.2.7",
+		"@types/node": "^12.7.2",
+		"benchmark": "^2.1.4",
+		"chai": "^4.2.0",
+		"microtime": "^3.0.0",
+		"mocha": "^6.2.0",
+		"stream-mock": "^2.0.5",
+		"ts-node": "^8.3.0",
+		"typescript": "^3.5.3",
+		"fuse-box": "^3.7.1",
+		"terser": "^4.2.0",
+		"uglify-js": "^3.6.0"
+	},
+	"dependencies": {}
+}
