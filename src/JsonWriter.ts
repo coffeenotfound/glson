@@ -10,12 +10,12 @@ export interface JsonWriter {
 	beginArray(name?: string): JsonWriter;
 	endArray(): JsonWriter;
 	
-	element(value: any, replacer?: Replacer): JsonWriter;
+	element(value: JsonValue, replacer?: Replacer): JsonWriter;
 	
 	/** Note: This method is unsafe and may lead to malformed json. */
 	elementRaw(rawValue: string): JsonWriter;
 	
-	member(name: string, value: any, replacer?: Replacer): JsonWriter;
+	member(name: string, value: JsonValue, replacer?: Replacer): JsonWriter;
 	
 	/**
 	 * Note: This method is unsafe and may lead to malformed json.
