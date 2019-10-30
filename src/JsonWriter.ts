@@ -63,6 +63,8 @@ export class JsonStreamWriter implements JsonWriter {
 	 * compact formatting for best performance. */
 	protected _compactOutput: boolean;
 	
+	// protected _indentLevel: number = 0;
+	
 	public constructor(stream: Writable, options?: JsonWriterOptions) {
 		this._stream = stream;
 		this._stringify = DEFAULT_STRINGIFY;
@@ -83,6 +85,14 @@ export class JsonStreamWriter implements JsonWriter {
 		// Reset flooded flag
 		this._flooded = false;
 	}
+	
+	// protected _destructureObjectCompact(object: object) {
+	//	
+	// }
+	//
+	// protected _destructureObjectFancy(object: object) {
+	//	
+	// }
 	
 	public beginArray(name?: string): JsonWriter {
 		let hasName = (name !== undefined);
