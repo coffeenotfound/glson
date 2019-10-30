@@ -2,6 +2,7 @@
 	"name": "glson",
 	"version": "0.1.0",
 	"description": "A high-performance JSON stream writing library.",
+	"license": "MIT",
 	"main": "build/main.js",
 	"types": "build/main.d.ts",
 	"scripts": {
